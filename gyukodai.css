@@ -97,3 +97,20 @@ aside a {
 aside a:hover {
     text-decoration: underline;
 }
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
