@@ -66,25 +66,34 @@ article h1, section h2 {
 }
 
 aside {
-    width: 25%;
-    background-color: #bdc3c7;
-    padding: 15px;
-    box-sizing: border-box;
-}
-
-footer {
-    background-color: #34495e;
-    color: #fff;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-footer p {
-    margin: 0;
+aside h2 {
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-bottom: 10px;
 }
 
-footer a {
-    color: #fff;
+aside p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #34495e;
+}
+
+aside a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside a:hover {
     text-decoration: underline;
 }
