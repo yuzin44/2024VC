@@ -4,6 +4,7 @@ body {
     background-color: #fdf2e9;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* 横方向のはみ出しを防止 */
 }
 
 header {
@@ -45,16 +46,21 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* レイアウトの調整 */
 .big_box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* 中央寄せをキープしつつ、間隔を調整 */
+    gap: 20px; /* 子要素間のスペースを指定 */
     padding: 20px;
+    max-width: 1200px; /* コンテンツ幅を制限 */
+    margin: 0 auto; /* 中央寄せ */
 }
 
 main {
     width: 70%;
     background-color: #ecf0f1;
     padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を追加して視覚的に分ける */
 }
 
 article {
@@ -66,8 +72,8 @@ article h1, section h2 {
 }
 
 aside {
-    width: 90%;
-    margin: 20px auto;
+    width: 25%; /* レイアウトを整えるために幅を指定 */
+    margin: 0; /* 自動でレイアウト内に収まるよう修正 */
     padding: 10px;
     background-color: #f7f7f7;
     border: 1px solid #ccc;
