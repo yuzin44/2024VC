@@ -1,15 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>牛工大 | お問い合わせ</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 <header>
-  <h1>牛工大</h1>
-  <p>中途半端なものは提供しません。一流の肉を格安で！</p>
+  <div class="logo">
+    <img src="images/building_food_yakiniku.png" alt="牛工大ロゴ">
+  </div>
 </header>
 
 <nav>
@@ -20,26 +21,22 @@
   </ul>
 </nav>
 
-<main>
-  <article>
+<main class="grid-container">
+  <section class="grid-item">
     <h1>お問い合わせ</h1>
-    <form action="mailto:info@yakiniki.umai.up" method="post" enctype="text/plain">
-      <label for="name">お名前:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-      <label for="email">メールアドレス:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-      <label for="message">お問い合わせ内容:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
-      <input type="submit" value="送信">
-      <input type="reset" value="リセット">
-    </form>
-  </article>
+    <p>以下の情報をご利用ください。</p>
+    <p><strong>住所:</strong> 〒000-0000 焼肉市美食町1-2-3</p>
+    <p><strong>電話番号:</strong> 000-456-7890</p>
+    <p><strong>メール:</strong> <a href="mailto:info@yakiniki.umai.up">info@yakiniki.umai.up</a></p>
+  </section>
+  <section class="grid-item">
+    <h2>地図</h2>
+    <img src="images/map.jpg" alt="店舗地図" class="rounded-image">
+  </section>
 </main>
 
 <footer>
-  <address>
-    <p>© 牛工大 | 本格炭火焼肉店</p>
-  </address>
+  <p>© 牛工大 | 本格炭火焼肉店</p>
 </footer>
 </body>
 </html>
