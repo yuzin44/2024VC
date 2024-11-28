@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>牛工大 | お問い合わせ</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>牛工大</h1>
+  <p>中途半端なものは提供しません。一流の肉を格安で！</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="menu.html">メニュー</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+  </ul>
+</nav>
+
+<main>
+  <article>
+    <h1>お問い合わせ</h1>
+    <form action="mailto:info@yakiniki.umai.up" method="post" enctype="text/plain">
+      <label for="name">お名前:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">メールアドレス:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">お問い合わせ内容:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      <input type="submit" value="送信">
+      <input type="reset" value="リセット">
+    </form>
+  </article>
+</main>
+
+<footer>
+  <address>
+    <p>© 牛工大 | 本格炭火焼肉店</p>
+  </address>
+</footer>
+</body>
+</html>
