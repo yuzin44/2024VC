@@ -1,60 +1,76 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fdf2e9;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
 }
 
 header {
-    background-color: #e74c3c;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 5px 0;
-}
-
-nav {
-    background-color: #34495e;
-    color: #fff;
-    padding: 10px 0;
+.logo img {
+  max-width: 200px;
+  height: auto;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+  margin: 0 10px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
 }
 
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+nav ul li a:hover {
+  background-color: #555;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-image {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.rounded-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 footer {
-    background-color: #34495e;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #222;
+  color: white;
 }
