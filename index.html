@@ -1,38 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>牛工大 | 本格炭火焼肉店</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 <header>
-  <h1>牛工大</h1>
-  <p>中途半端なものは提供しません。一流の肉を格安で！</p>
+  <div class="logo">
+    <img src="images/logo.png" alt="牛工大ロゴ">
+  </div>
 </header>
 
 <nav>
   <ul>
-    <li><a href="index.html">ホーム</a></li>
+    <li><a href="index.html">当店について</a></li>
     <li><a href="menu.html">メニュー</a></li>
     <li><a href="contact.html">お問い合わせ</a></li>
   </ul>
 </nav>
 
-<main>
-  <article>
+<main class="grid-container">
+  <section class="grid-item">
     <h1>当店について</h1>
-    <img src="mise1.jpg" alt="店舗外観" style="width:100%; max-width:600px; margin:20px 0; border-radius:8px;">
-    <p>当店は、しちりんを使った本格炭火焼肉店です。炭火焼肉でも煙などの排気には最新鋭の換気システムを導入しています。</p>
-    <p>オーダーはタッチパネルで行い、キャッシュレス決済を歓迎しています。キャッシュレスの場合、なんと10%オフ！</p>
-  </article>
+    <img src="images/mise1.jpg" alt="店舗外観" class="rounded-image">
+    <p>牛工大は、しちりんを使った本格炭火焼肉店です。新鮮なお肉を最高の味でご提供します。</p>
+  </section>
+  <section class="grid-item">
+    <h2>当店のこだわり</h2>
+    <p>最新換気システムで煙の心配不要！オーダーはタッチパネル、キャッシュレス決済10%オフ！</p>
+  </section>
 </main>
 
 <footer>
-  <address>
-    <p>© 牛工大 | 本格炭火焼肉店</p>
-  </address>
+  <p>© 牛工大 | 本格炭火焼肉店</p>
 </footer>
 </body>
 </html>
