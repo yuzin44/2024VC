@@ -1,15 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>牛工大 | メニュー</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 <header>
-  <h1>牛工大</h1>
-  <p>中途半端なものは提供しません。一流の肉を格安で！</p>
+  <div class="logo">
+    <img src="images/building_food_yakiniku.png" alt="牛工大ロゴ">
+  </div>
 </header>
 
 <nav>
@@ -20,38 +21,59 @@
   </ul>
 </nav>
 
-<main>
-  <article>
+<main class="grid-container">
+  <section class="grid-item">
     <h1>メニュー</h1>
-    <section>
-      <h2>☆牛肉</h2>
-      <ul>
-        <li><strong>工大カルビ:</strong> 骨と骨の間の旨味の詰まった部位を丁寧にカット。</li>
-        <li><strong>カルビ:</strong> 牛肉のうまみ、甘味と香りが楽しめる定番メニュー。</li>
-        <li><strong>ハラミ:</strong> 国民のアイドル！お店一押し。</li>
-      </ul>
-    </section>
-    <section>
-      <h2>☆豚肉</h2>
-      <ul>
-        <li><strong>トンたん塩:</strong> コリコリ食感で牛タンに負けない満足感。</li>
-        <li><strong>やみつき豚ホルモン:</strong> この食感がクセになる！</li>
-      </ul>
-    </section>
-    <section>
-      <h2>☆鶏肉</h2>
-      <ul>
-        <li><strong>ハラミ付きヤゲン:</strong> ジューシーなハラミとコリコリ軟骨の絶妙な組み合わせ。</li>
-        <li><strong>とりもも:</strong> お子様にも人気、やわらかくてジューシー。</li>
-      </ul>
-    </section>
-  </article>
+    <img src="images/sumi.jpg" alt="炭火" class="rounded-image">
+    <p>厳選した食材をリーズナブルな価格でお楽しみいただけます。</p>
+  </section>
+  <section class="grid-item">
+    <h2>牛肉</h2>
+    <ul>
+      <li>
+        <strong>工大カルビ:</strong> 骨と骨の間の旨味の詰まった部位を丁寧にカット  
+        <img src="images/koudai_karubi.jpg" alt="工大カルビ" class="menu-image">
+      </li>
+      <li>
+        <strong>カルビ:</strong> 牛肉の旨味と香りが楽しめる定番メニュー  
+        <img src="images/karubi.jpg" alt="カルビ" class="menu-image">
+      </li>
+      <li>
+        <strong>ハラミ:</strong> 国民のアイドル！お店一押し  
+        <img src="images/harami.jpg" alt="ハラミ" class="menu-image">
+      </li>
+    </ul>
+  </section>
+  <section class="grid-item">
+    <h2>豚肉</h2>
+    <ul>
+      <li>
+        <strong>トンたん塩:</strong> コリコリ食感が楽しめる  
+        <img src="images/buta_tan.jpg" alt="トンたん塩" class="menu-image">
+      </li>
+      <li>
+        <strong>やみつき豚ホルモン:</strong> 食感がクセになる一品  
+        <img src="images/buta_horumon.jpg" alt="豚ホルモン" class="menu-image">
+      </li>
+    </ul>
+  </section>
+  <section class="grid-item">
+    <h2>鶏肉</h2>
+    <ul>
+      <li>
+        <strong>ハラミ付きヤゲン:</strong> ジューシーなハラミ付きの軟骨  
+        <img src="images/tori_yagen.jpg" alt="ハラミ付きヤゲン" class="menu-image">
+      </li>
+      <li>
+        <strong>とりもも:</strong> 柔らかくてジューシー。お子様にも人気  
+        <img src="images/tori_momo.jpg" alt="とりもも" class="menu-image">
+      </li>
+    </ul>
+  </section>
 </main>
 
 <footer>
-  <address>
-    <p>© 牛工大 | 本格炭火焼肉店</p>
-  </address>
+  <p>© 牛工大 | 本格炭火焼肉店</p>
 </footer>
 </body>
 </html>
