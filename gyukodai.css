@@ -46,7 +46,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* レイアウトの調整 */
 .big_box {
     display: flex;
     justify-content: space-between; /* 中央寄せをキープしつつ、間隔を調整 */
@@ -73,7 +72,7 @@ article h1, section h2 {
 
 aside {
     width: 25%; /* レイアウトを整えるために幅を指定 */
-    margin: 0; /* 自動でレイアウト内に収まるよう修正 */
+    margin: 0;
     padding: 10px;
     background-color: #f7f7f7;
     border: 1px solid #ccc;
@@ -116,27 +115,20 @@ img {
     height: auto;
 }
 
-/* フッター修正 */
 footer {
     background-color: #34495e;
     color: #fff;
     text-align: center;
-    padding: 20px 0; /* 余白を大きめに */
+    padding: 20px 0;
     margin-top: 20px;
-    border-top: 5px solid #e74c3c; /* 上部に目立つ線を追加 */
+    border-top: 5px solid #e74c3c;
 }
 
 footer p {
     margin: 0;
     padding: 5px 0;
     font-size: 1em;
-    background-color: #2c3e50; /* 背景に濃い色を付ける */
-    border-radius: 5px; /* 囲み感を出すため角を丸く */
-    display: inline-block; /* 囲みを中央に */
-    padding: 5px 10px;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: underline;
-}
+    background-color: #2c3e50;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5
