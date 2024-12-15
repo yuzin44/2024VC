@@ -1,18 +1,36 @@
 document.getElementById('search-btn').addEventListener('click', () => {
   const zipcode = document.getElementById('zipcode').value;
 
+  if (!zipcode) {
+    alert('郵便番号を入力してください。');
+    return;
+  }
+
   fetch(`http://zip.cgis.biz/xml/zip.php?zn=${zipcode}`)
-    .then(response => response.text())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('郵便番号検索APIに接続できませんでした。');
+      }
+      return response.text();
+    })
     .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
     .then(data => {
-      const address = data.querySelector('state').textContent +
-                      data.querySelector('city').textContent +
-                      data.querySelector('address').textContent;
+      const state = data.querySelector('state');
+      const city = data.querySelector('city');
+      const address = data.querySelector('address');
 
-      document.getElementById('address').textContent = address;
-      showMap(address);
+      if (state && city && address) {
+        const fullAddress = state.textContent + city.textContent + address.textContent;
+        document.getElementById('address').textContent = fullAddress;
+        showMap(fullAddress);
+      } else {
+        alert('有効な住所が見つかりませんでした。');
+      }
     })
-    .catch(error => console.error('エラー:', error));
+    .catch(error => {
+      console.error('エラー:', error);
+      alert('エラーが発生しました: ' + error.message);
+    });
 });
 
 function showMap(address) {
