@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>郵便番号検索マップ</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="api_keys.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <h1>郵便番号で住所検索＆マップ表示</h1>
+  <input type="text" id="zipcode" placeholder="郵便番号を入力">
+  <button id="search-btn">検索</button>
+  <div id="address"></div>
+  <div id="map"></div>
+</body>
+</html>
